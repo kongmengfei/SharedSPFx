@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "testcanvas-client-side-solution",
+    "id": "6a74eb58-6f48-4a12-88eb-64e02243dcfd",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/testcanvas.sppkg"
+  }
+}
