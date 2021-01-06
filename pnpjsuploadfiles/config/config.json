@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "pnpjsuploadfiles-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pnpjsuploadfiles/PnpjsuploadfilesWebPart.js",
+          "manifest": "./src/webparts/pnpjsuploadfiles/PnpjsuploadfilesWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PnpjsuploadfilesWebPartStrings": "lib/webparts/pnpjsuploadfiles/loc/{locale}.js"
+  }
+}

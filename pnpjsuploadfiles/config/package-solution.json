@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "pnpjsuploadfiles-client-side-solution",
+    "id": "4dd5e3c0-60b6-4e7a-917a-a2b51bf95c7d",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/pnpjsuploadfiles.sppkg"
+  }
+}

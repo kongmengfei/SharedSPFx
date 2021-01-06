@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "panelmeettab-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/panelmeettab/PanelmeettabWebPart.js",
+          "manifest": "./src/webparts/panelmeettab/PanelmeettabWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PanelmeettabWebPartStrings": "lib/webparts/panelmeettab/loc/{locale}.js"
+  }
+}
