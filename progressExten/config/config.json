@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "progress-exten-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/progressExten/ProgressExtenCommandSet.js",
+          "manifest": "./src/extensions/progressExten/ProgressExtenCommandSet.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ProgressExtenCommandSetStrings": "lib/extensions/progressExten/loc/{locale}.js"
+  }
+}

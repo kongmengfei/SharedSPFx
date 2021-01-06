@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://isvdevchat.sharepoint.com/sites/sbdev/Lists/mm/AllItems.aspx",
+      "customActions": {
+        "78ea4d4d-35da-43b6-892c-ddfbfe4cdd1d": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    },
+    "progressExten": {
+      "pageUrl": "https://isvdevchat.sharepoint.com/sites/sbdev/Lists/mm/AllItems.aspx",
+      "customActions": {
+        "78ea4d4d-35da-43b6-892c-ddfbfe4cdd1d": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    }
+  }
+}
