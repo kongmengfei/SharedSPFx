@@ -1,0 +1,1 @@
+{"version":3,"file":"ISpfxPnpListviewState.d.ts","sourceRoot":"","sources":["../../../../src/webparts/spfxPnpListview/components/ISpfxPnpListviewState.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,OAAO,EAAE,MAAM,wBAAwB,CAAC;AAEjD,MAAM,WAAW,qBAAqB;IACpC,KAAK,EAAE,GAAG,EAAE,CAAC;IACb,OAAO,EAAE,OAAO,EAAE,CAAC;CACpB"}
