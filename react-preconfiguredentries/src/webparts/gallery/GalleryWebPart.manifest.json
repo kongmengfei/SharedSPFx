@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "0995e72e-9507-472c-ac0c-8304a8be7a8b",
+  "alias": "GalleryWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportsFullBleed": true,
+  "supportedHosts": [
+    "SharePointWebPart",
+    "SharePointFullPage",
+    "TeamsTab"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "6737645a-4443-4210-a70e-e5e2a219133a",
+      "group": {
+        "default": "Content"
+      },
+      "title": {
+        "default": "Recent images"
+      },
+      "description": {
+        "default": "Shows 5 most recent images"
+      },
+      "officeFabricIconFontName": "Picture",
+      "properties": {
+        "listName": "Images",
+        "order": "reversed",
+        "numberOfItems": 5,
+        "style": "thumbnails"
+      }
+    }
+  ]
+}
