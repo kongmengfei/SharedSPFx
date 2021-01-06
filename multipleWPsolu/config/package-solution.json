@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "multiple-w-psolu-client-side-solution",
+    "id": "59038ede-6594-4a0e-9d06-be197c5c0cde",
+    "version": "1.0.1.6",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/multiple-w-psolu.sppkg"
+  }
+}
