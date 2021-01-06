@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "prerak-13-spfx-001-client-side-solution",
+    "id": "8972b848-1663-4930-923a-7cbf8bba024d",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/prerak-13-spfx-001.sppkg"
+  }
+}
