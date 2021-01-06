@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "testfield-field-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/testfield/TestfieldFieldCustomizer.js",
+          "manifest": "./src/extensions/testfield/TestfieldFieldCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TestfieldFieldCustomizerStrings": "lib/extensions/testfield/loc/{locale}.js"
+  }
+}

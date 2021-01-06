@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://isvdevchat.sharepoint.com/sites/tcccc/Lists/mmm/AllItems.aspx",
+      "fieldCustomizers": {
+        "ManagerEmail": {
+          "id": "ec8cba75-c30a-4906-85f5-ff2bab5dd64c",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    },
+    "testfield": {
+      "pageUrl": "https://isvdevchat.sharepoint.com/sites/tcccc/Lists/mmm/AllItems.aspx",
+      "fieldCustomizers": {
+        "ManagerEmail": {
+          "id": "ec8cba75-c30a-4906-85f5-ff2bab5dd64c",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    }
+  }
+}
