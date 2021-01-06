@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "modaldialog-client-side-solution",
+    "id": "90b9eb68-1166-4e10-ae06-74be76c7f5af",
+    "version": "1.0.1.6",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/modaldialog.sppkg"
+  }
+}
