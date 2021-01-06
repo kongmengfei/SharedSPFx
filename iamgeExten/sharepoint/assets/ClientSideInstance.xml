@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="ImageExten"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="8ecad5d4-9e19-4c96-bcad-090fe4f4e68e"
+        Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </ClientSideComponentInstance>
+</Elements>

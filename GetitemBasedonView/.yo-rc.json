@@ -1,0 +1,29 @@
+{
+  "@pnp/generator-spfx": {
+    "framework": "react",
+    "pnpFramework": "reactjs.plus",
+    "pnp-libraries": [
+      "@pnp/pnpjs",
+      "rush@3.7"
+    ],
+    "pnp-ci": "no-devops",
+    "pnp-vetting": [
+      "webpack-analyzer",
+      "stylelint",
+      "csscomb"
+    ],
+    "spfxenv": "spo",
+    "pnp-testing": []
+  },
+  "@microsoft/generator-sharepoint": {
+    "environment": "spo",
+    "framework": "react",
+    "isCreatingSolution": true,
+    "version": "1.11.0",
+    "libraryName": "getitem-basedon-view",
+    "libraryId": "180a91ba-70b4-4d8c-b56c-7d7dd801e2c1",
+    "packageManager": "npm",
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

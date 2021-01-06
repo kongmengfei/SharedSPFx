@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://isvdevchat.sharepoint.com/sites/testprivate/SitePages/3bnt9fpu.aspx",
+      "customActions": {
+        "8ecad5d4-9e19-4c96-bcad-090fe4f4e68e": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "Top": "Top area of the page",
+            "Bottom": "Bottom area of the page"
+          }
+        }
+      }
+    },
+    "imageExten": {
+      "pageUrl": "https://isvdevchat.sharepoint.com/sites/testprivate/SitePages/3bnt9fpu.aspx",
+      "customActions": {
+        "8ecad5d4-9e19-4c96-bcad-090fe4f4e68e": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "Top": "Top area of the page",
+            "Bottom": "Bottom area of the page"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "image-exten-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/imageExten/ImageExtenApplicationCustomizer.js",
+          "manifest": "./src/extensions/imageExten/ImageExtenApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ImageExtenApplicationCustomizerStrings": "lib/extensions/imageExten/loc/{locale}.js"
+  }
+}

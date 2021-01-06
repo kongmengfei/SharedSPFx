@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "description":"",
+  "solution": {
+    "name": "iamge-exten-client-side-solution",
+    "id": "a2d1494c-738a-4679-accf-e288b49c384e",
+    "title": "iamge-exten-client-side-solution-title",
+
+    "supportedLocales": ["zh-cn","en-us"],
+    
+    "version": "1.0.0.2",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false,
+    "features": [
+      {
+        "title": "Application Extension - Deployment of custom action.",
+        "description": "Deploys a custom action with ClientSideComponentId association0",
+        "id": "44aa83b9-2588-4829-ae78-6c3fbb65d40b",
+        "version": "1.0.0.2",
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "ClientSideInstance.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/iamge-exten.sppkg"
+  }
+}
