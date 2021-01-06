@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "share-point-lists-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/sharePointLists/SharePointListsWebPart.js",
+          "manifest": "./src/webparts/sharePointLists/SharePointListsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SharePointListsWebPartStrings": "lib/webparts/sharePointLists/loc/{locale}.js"
+  }
+}
