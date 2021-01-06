@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "no-div-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/noDivWp/NoDivWpWebPart.js",
+          "manifest": "./src/webparts/noDivWp/NoDivWpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "NoDivWpWebPartStrings": "lib/webparts/noDivWp/loc/{locale}.js"
+  }
+}
