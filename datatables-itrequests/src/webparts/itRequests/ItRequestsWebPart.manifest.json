@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "447bce79-fad4-401f-872b-6c421e4e0ee5",
+  "alias": "ItRequestsWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "IT requests"
+      },
+      "description": {
+        "default": "Shows overview of IT support requests"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "listName": "IT requests"
+      }
+    }
+  ]
+}
