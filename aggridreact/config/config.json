@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "aggridreact-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/aggridreact/AggridreactWebPart.js",
+          "manifest": "./src/webparts/aggridreact/AggridreactWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AggridreactWebPartStrings": "lib/webparts/aggridreact/loc/{locale}.js"
+  }
+}
