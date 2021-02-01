@@ -27,13 +27,13 @@ export default class Pnpjsuploadfiles extends React.Component<IPnpjsuploadfilesP
 
           <div className={styles.row}>
             <ReactFileReader multipleFiles={true} fileTypes={[".csv", ".xlsx", ".Docx", ".pdf"]} base64={true}
-              handleFiles={f => this.handleFiles(f)}>
+              handleFiles={(f: any) => this.handleFiles(f)}>
               <button className='btn'>Upload</button>
             </ReactFileReader>
           </div>
 
           <div className={styles.row}>
-            <button id="btn_add" className={styles.button} onClick={this.createItem.bind(this)}>Submit</button>
+            <button id="btn_add" className={styles.button} onClick={this.UploadFileToLib.bind(this)}>Submit</button>
           </div>
 
         </div>
@@ -50,10 +50,10 @@ export default class Pnpjsuploadfiles extends React.Component<IPnpjsuploadfilesP
 
     var fileInfos: IAttachmentFileInfo[] = [];
 
-    fileInfos.push({
-      name: "My file name 1",
-      content: "string, blob, or array"
-    });
+    // fileInfos.push({
+    //   name: "My file name 1",
+    //   content: "string, blob, or array"
+    // });
 
     // loop through files
     for (var i = 0; i < filelist.length; i++) {
@@ -74,37 +74,31 @@ export default class Pnpjsuploadfiles extends React.Component<IPnpjsuploadfilesP
 
   }
 
+  private async UploadFileToLib() {
+
+    let filename = this.state.uploadfiles[0].name;
+    let fileContent = this.state.uploadfiles[0].content;
+
+    const file = await sp.web.getFolderByServerRelativeUrl("/sites/sbdev/My test doc lib/docs").files.add(filename, fileContent, true);
+    const item = await file.file.getItem();
+    await item.update({
+      Title: "A Title"+ (new Date()).toLocaleDateString(),
+      uuId: 18
+    });
+
+  }
+
+
   private createItem(): void {
 
-
-    const web = await sp.web.select("Title")()
-  console.log("Web Title: ", web.Title);
-
-  const result2 = await sp.web.lists.getByTitle('kkkk').views.getByTitle('All Items')();
-
-  console.log("view: ", result2);
-
-  const fields:IViewFields = await sp.web.lists.getByTitle('kkkk').views.getByTitle('All Items').fields();
-  console.log("field: ", fields);
-
-
-
-
-
     const list = sp.web.lists.getByTitle("kkkk");
-
-
-
-
     // get all the views and their properties
-    const view = list.views.getByTitle("All Items").get().
-
-
+    const view = list.views.getByTitle("All Items").get();
     sp.web.lists.getByTitle("mylist").items.add({
       'Title': this.state.subject
     }).then((r: IItemAddResult) => {
       r.item.attachmentFiles.addMultiple(this.state.uploadfiles);
-    }).then(e => { console.log("successfully created"); }).catch(e => { console.log("Error while creating the item" + e) });
+    }).then(e => { console.log("successfully created"); }).catch(e => { console.log("Error while creating the item" + e); });
 
   }
 

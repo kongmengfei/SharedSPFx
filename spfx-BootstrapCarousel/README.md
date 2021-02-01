@@ -1,5 +1,9 @@
 # spfx-bootstrap-carousel
+https://stackoverflow.com/questions/62939139/declaration-or-statement-expected-with-react-bootstrap
 
+https://react-bootstrap.github.io/components/carousel/#carousel-props
+
+https://www.c-sharpcorner.com/article/bootstrap-carousel-in-spfxreactjs/
 ## Summary
 
 Short summary on functionality and used technologies.
